@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GeoGPT
 
-# Run and deploy your AI Studio app
+An interactive, map-based AI chatbot that answers location-specific questions — ask about places, areas, and locations in natural language and get AI-generated answers grounded in real-time Google Maps data.
 
-This contains everything you need to run your app locally.
+## What it does
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LRyVHGJvT3_n1YblaKc5P2YckR0MYcja
+- Chat interface for location-based questions ("What's near…?", "Tell me about this area")
+- Combines Google Gemini AI with Google Maps data for location-aware answers
+- Built as a responsive single-page web app
 
-## Run Locally
+## Tech stack
 
-**Prerequisites:**  Node.js
+- React 19 + TypeScript
+- Vite 6
+- Google Gemini API (`@google/genai`)
 
+## Run locally
+
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Set your `GEMINI_API_KEY` in `.env.local`
 3. Run the app:
    `npm run dev`
+
+Other scripts: `npm run build` (production build), `npm run preview` (preview the build).
+
+## Status
+
+Working prototype. Feedback and ideas welcome via Issues.
+
+---
+Built by [Zacharia Omollo](https://github.com/omollohzack) — Full-Stack & Platform Engineer.
